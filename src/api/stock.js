@@ -26,6 +26,8 @@ class Stock {
 
   async getSBPoint(code, start, end) {
     code = code || 'sz000002'
+    start = start || '1992-01-01'
+    end = end || '2018-10-18'
     return axios.get(`${config.BASE_API}/keykline?code=${code}&os=android&start=${start}&end=${end}&version=2600&iid=46643182541&device_id=58253248053&ac=wifi&channel=gdt_ang_gp_yyb1&aid=1182&app_name=stock&version_code=2600&version_name=2.6.0&device_platform=android&ssmix=a&device_type=ONEPLUS+A3000&device_brand=OnePlus&language=zh&os_api=26&os_version=8.0.0&openudid=e7858fd448e5ff8c&manifest_version_code=2600&resolution=1080*1920&dpi=420&update_version_code=2600&_rticket=1539865537833&stock_app_version=1`)
       .then(function (response) {
         // console.log(response);
