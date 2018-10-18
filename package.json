@@ -1,0 +1,19 @@
+{
+  "name": "namg.stock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node src/main.js",
+    "start": "npm run dev",
+    "test": "npm run lint"
+  },
+  "author": "xujia.bai",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "config": "^2.0.1",
+    "moment": "^2.22.2",
+    "tracer": "^0.9.1"
+  }
+}
