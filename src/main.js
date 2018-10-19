@@ -1,4 +1,5 @@
 const moment = require('moment')
+const sleep = require('sleep');
 
 const stock = require('./api/stock')
 const db = require('./db')
@@ -22,6 +23,7 @@ const pullAllData = async() => {
 
       if (list.rank_list) {
         for (const item of list.rank_list) {
+          sleep.sleep(3);
           const sbList = await stock.getSBPoint(item.code);
           // logger.debug(sbList);
 
