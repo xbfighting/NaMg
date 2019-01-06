@@ -35,7 +35,7 @@ const db = new Sequelize(Object.assign(mysql.options, {
   password: mysql.password,
   database: mysql.database,
   logging: sql => {
-    logger.trace("sql", sql)
+    // logger.trace("sql", sql)
   }
 }))
 
