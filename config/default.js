@@ -1,6 +1,6 @@
 module.exports = {
   NODE_ENV: 'development',
-  BASE_API: '',
+  BASE_API: 'http://stock.snssdk.com/v1/quotes',
   mysql : {
     host: 'localhost',
     port: 3306,
